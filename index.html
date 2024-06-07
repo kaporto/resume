@@ -3,174 +3,440 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Resume</title>
+    <title>Karine Porto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <h1>Karine Porto</h1>
-    <img
-      src="./assets/images/20240217_182856.jpg"
-      height="100"
-      alt="karine photo"
-    />
-    <h2>Summary</h2>
-    <p>
-      Web Developer with +5 years experience in both back and front end
-      development. Good knowledge on agile methodologies.
-    </p>
-    <p>
-      Focused on developing quality software and following good practices that
-      generate testable and easy-to-maintain products.
-    </p>
-    <p>
-      <b>Areas of interest:</b> PHP, Laravel, JavaScript, Vue.js, Bootstrap, Tailwind CSS, MySQL, PostgreSQL, MSSQL.
-    </p>
+    <!--Header-->
+    <!-- section id="header">
+      <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4">Simple header</span>
+          </a>
+    
+          <ul class="nav nav-pills">          
+            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          </ul>
+        </header>
+      </div>
+    </section-->
+    <!-- Title -->
+    <section id="title" class="background">
+      <div class="container col-xxl-8 px-4 pt-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="./assets/images/20240217_182856.jpg"
+              class="img-fluid border rounded-3 shadow-lg mb-5"
+              alt="Bootstrap Themes"
+              width="500"
+              height="300"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              Hey, I'm Karine.
+            </h1>            
+            <p class="lead">
+              Let's get to know me better and welcome to my personal website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <hr />
-    <h2>Education</h2>
-    <p>
-      Bachelor's Degree in Computer Science - Federal University of Alfenas
-      (Brazil) - (2007 - 2013)
-    </p>
+    <!--About me-->
+    <section id="about-me">
+      <div class="text-center">
+        <div class="container">          
+          <h2 class="text-body-emphasis">About me</h2>
+          <p class="col-lg-8 mx-auto lead">
+            Software Developer with +5 years experience in both back and front
+            end development. Good knowledge on agile methodologies. Focused on
+            developing quality software and following good practices that
+            generate testable and easy-to-maintain products.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section id="features">
+      <div class="container pt-5" id="icon-grid">
+        <h2 class="pb-2 border-bottom text-center">Areas of interest</h2>
+
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5 pt-3"
+        >
+          <div class="col d-flex align-items-start">
+            <img
+              src="./assets/icons/php.svg"
+              alt="php icon"
+              class="icon-size bi text-body-secondary flex-shrink-0 me-3"
+            />
+            <div>
+              <h3 class="fw-normal mb-0 fs-4 text-body-emphasis">PHP</h3>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img
+              src="./assets/icons/laravel.svg"
+              alt="laravel icon"
+              class="icon-size bi text-body-secondary flex-shrink-0 me-3"
+            />
+            <div>
+              <h3 class="fw-normal mb-0 fs-4 text-body-emphasis">Laravel</h3>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-start">
+            <img
+              src="./assets/icons/js.svg"
+              alt="js icon"
+              class="icon-size bi text-body-secondary flex-shrink-0 me-3"
+            />
+            <div>
+              <h3 class="fw-normal mb-0 fs-4 text-body-emphasis">JavaScript</h3>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img
+              src="./assets/icons/vuejs.svg"
+              alt="vuejs icon"
+              class="icon-size bi text-body-secondary flex-shrink-0 me-3"
+            />
+            <div>
+              <h3 class="fw-normal mb-0 fs-4 text-body-emphasis">Vue.js</h3>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img
+              src="./assets/icons/bootstrap.svg"
+              alt="bootstrap icon"
+              class="icon-size bi text-body-secondary flex-shrink-0 me-3"
+            />
+            <div>
+              <h3 class="fw-normal mb-0 fs-4 text-body-emphasis">Bootstrap</h3>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img
+              src="./assets/icons/tailwind-css.svg"
+              alt="tailwind-css icon"
+              class="icon-size bi text-body-secondary flex-shrink-0 me-3"
+            />
+            <div>
+              <h3 class="fw-normal mb-0 fs-4 text-body-emphasis">Tailwind</h3>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img
+              src="./assets/icons/database-solid.svg"
+              alt="database icon"
+              class="icon-size bi text-body-secondary flex-shrink-0 me-3"
+            />
+            <div>
+              <h3 class="fw-normal mb-0 fs-4 text-body-emphasis">MySQL</h3>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img
+              src="./assets/icons/database-solid.svg"
+              alt="database icon"
+              class="icon-size bi text-body-secondary flex-shrink-0 me-3"
+            />
+            <div>
+              <h3 class="fw-normal mb-0 fs-4 text-body-emphasis">PostgreSQL</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <hr />
-    <h2>Work Experience</h2>
-    <ul>
-      <li>
-        <h3>Full Stack Developer @ Quod</h3>
-        <small>January 2019 - June 2019</small>
-        <p>
-          Projects with emphasis in web development using Java and PHP
-          Frameworks for the banking area. The main goal of the principal
-          application was to generate a credit report. As it is a large scale
-          application, there was a great planning and analysis of its
-          architecture.
-        </p>
-        <p>
-          <b>Technologies:</b> Java, Spring Framework, IntelliJ, VSCode, Maven,
-          GitLab, JSTL, JDBC Template, PHP, Laravel, JQuery, Bootstrap, Docker
-        </p>
-        <p><b>Key Responsibilities:</b></p>
-        <ul>
-          <li>Analysis and architecture planning.</li>
-          <li>Web Development (Java, PHP).</li>
-          <li>Testing and production support and maintenance.</li>
-          <li>
-            Business analyst responsibilities bridging the gap between developer
-            team and PO.
-          </li>
-        </ul>
-      </li>
-      <br />
-      <li>
-        <h3>Full Stack Developer @ Editora Positivo</h3>
-        <small>April 2015 - June 2018</small>
-        <p>
-          Projects with emphasis on education and productivity. Mainly developed
-          in PHP with Lavarel, RESTful integrations and SQL databases.
-        </p>
-        <p>
-          <b>Technologies:</b> PHP, Laravel, MongoDB, SQLServer, MySQL,
-          Bitbucket, JQuery, Bootstrap, HTML5, CSS, PowerBI
-        </p>
-        <p><b>Key Responsibilities:</b></p>
-        <ul>
-          <li>
-            Requirements gathering with stakeholders to determine new
-            functionalities.
-          </li>
-          <li>Development and maintenance of legacy PHP code.</li>
-          <li>
-            Definition of a new architecture for the system, proposing both code
-            and database changes to make the system more maintainable.
-          </li>
-          <li>
-            Responsible for the migration of legacy PHP code to Laravel
-            framework.
-          </li>
-          <li>
-            Responsible for the migration of legacy MySQL database structure and
-            data to a SQLServer.
-          </li>
-          <li>Created version control code to Bitbucket.</li>
-          <li>Technical support for customers and team members.</li>
-          <li>
-            Development and maintenance of RESTful APIs to integrate with other
-            internal systems.
-          </li>
-          <li>Maintenance of MongoDB database.</li>
-          <li>Responsible for system documentation.</li>
-        </ul>
-      </li>
-      <br />
-      <li>
-        <h3>Programmer @ Ambiente Livre Tecnologia</h3>
-        <small>March 2014 - April 2015</small>
-        <p>
-          Open source consultancy working on different projects and clients
-          using different technologies and frameworks.
-        </p>
-        <p>
-          <b>Technologies:</b> PHP, Wordpress, SugarCRM, PentahoBI, GIT, AWS,
-          Bootstrap, JQuery, HTML5, CSS, MySQL
-        </p>
-        <p><b>Key Responsibilities:</b></p>
-        <ul>
-          <li>Customer meetings for feature definition.</li>
-          <li>
-            Development of new functionalities and maintenance of existing PHP
-            code.
-          </li>
-          <li>
-            PHP code integration (Restful/SOAP) with SugarCRM and PentahoBI.
-          </li>
-        </ul>
-      </li>
-      <br />
-      <li>
-        <h3>Internship @ Federal University of Alfenas</h3>
-        <small>June 2012 - February 2014</small>
-        <p>
-          Project with emphasis in web development using PHP for the educational
-          area. The main goal of the application was to manage all
-          extracurricular activities promoted by Unifal-MG, like enrollment,
-          abstract submission, evaluations and certificate issuance.
-        </p>
-        <p>
-          <b>Technologies:</b> PHP, MVC, SVN, NetBeans, AJAX, HTML5, CSS,
-          Javascript, JQuery, MySQL, PostgreSQL
-        </p>
-        <p><b>Key Responsibilities:</b></p>
-        <ul>
-          <li>Meetings with key users to determine new functionalities.</li>
-          <li>
-            Development of new functionalities in PHP using MVC standards.
-          </li>
-          <li>Front end development using HTML5, CSS and JQuery.</li>
-          <li>
-            Integration of PHP code with MySQL and PostgreSQL and creation of
-            triggers and functions on the database.
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <!--Education-->
+    <section id="education">
+      <div class="container">
+        <div class="row align-items-md-stretch text-center">
+          <div class="col-md">
+            <div class="h-100 p-5 rounded-3 background">
+              <h2>Bachelor's Degree in Computer Science</h2>              
+              <p class="lead">Federal University of Alfenas (Brazil) -  2013
+              </p>              
+            </div>
+        </div>      
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <hr />
-    <h2>Skills</h2>
-    <ul>
-        <li>Software Development: ⭐️⭐️⭐️⭐️</li>
-        <li>Communication: ⭐️⭐️⭐️⭐️</li>
-        <li>Agile Methodologies: ⭐️⭐️⭐️⭐️</li>
-    </ul>
+    <!--Experience-->
+    <section id="experience">
+      <div class="container">
+        <h2 class="pb-2 border-bottom text-center">Experience</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <strong>Full Stack Developer @ Quod </strong>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p class="lead">
+                  Projects with emphasis in web development using Java and PHP
+                  Frameworks for the banking area. The main goal of the principal
+                  application was to generate a credit report. As it is a large scale
+                  application, there was a great planning and analysis of its
+                  architecture.
+                </p>
+                <p class="lead">(January 2019 - June 2019)</p>
+                <p class="lead fw-bold">Technologies:</p>
+               <p class="lead"> Java, Spring Framework, IntelliJ, VSCode, Maven,
+                  GitLab, JSTL, JDBC Template, PHP, Laravel, JQuery, Bootstrap, Docker
+                </p>
+                <p class="lead fw-bold"><b>Key Responsibilities:</b></p>
+                <ul class="list-group list-group-flush pb-3">
+                  <li class="list-group-item lead">Analysis and architecture planning.</li>
+                  <li class="list-group-item lead">Web Development (Java, PHP).</li>
+                  <li class="list-group-item lead">Testing and production support and maintenance.</li>
+                  <li class="list-group-item lead">
+                    Business analyst responsibilities bridging the gap between developer
+                    team and PO.
+                  </li>
+                </ul>                
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <strong>Full Stack Developer @ Editora Positivo </strong>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p class="lead">
+                  Projects with emphasis on education and productivity. Mainly developed
+                  in PHP with Lavarel, RESTful integrations and SQL databases.
+                </p>
+                <p class="lead">(April 2015 - June 2018)</p>
+                <p class="lead fw-bold">
+                  Technologies:</p>
+                <p class="lead">
+                  PHP, Laravel, MongoDB, SQLServer, MySQL,
+                  Bitbucket, JQuery, Bootstrap, HTML5, CSS, PowerBI
+                </p>
+                <p class="lead fw-bold">Key Responsibilities:</p>
+                <ul class="list-group list-group-flush pb-3">
+                  <li class="list-group-item lead">
+                    Requirements gathering with stakeholders to determine new
+                    functionalities.
+                  </li>
+                  <li class="list-group-item lead">Development and maintenance of legacy PHP code.</li>
+                  <li class="list-group-item lead">
+                    Definition of a new architecture for the system, proposing both code
+                    and database changes to make the system more maintainable.
+                  </li>
+                  <li class="list-group-item lead">
+                    Responsible for the migration of legacy PHP code to Laravel
+                    framework.
+                  </li>
+                  <li class="list-group-item lead">
+                    Responsible for the migration of legacy MySQL database structure and
+                    data to a SQLServer.
+                  </li>
+                  <li class="list-group-item lead">Created version control code to Bitbucket.</li>
+                  <li class="list-group-item lead">Technical support for customers and team members.</li>
+                  <li class="list-group-item lead">
+                    Development and maintenance of RESTful APIs to integrate with other
+                    internal systems.
+                  </li>
+                  <li class="list-group-item lead">Maintenance of MongoDB database.</li>
+                  <li class="list-group-item lead">Responsible for system documentation.</li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <strong>Programmer @ Ambiente Livre Tecnologia</strong>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p class="lead">
+                  Open source consultancy working on different projects and clients
+                  using different technologies and frameworks.
+                </p>
+                <p class="lead">(March 2014 - April 2015)</p>
+                <p class="lead fw-bold">
+                  Technologies:</p>
+                  <p class="lead">
+                     PHP, Wordpress, SugarCRM, PentahoBI, GIT, AWS,
+                  Bootstrap, JQuery, HTML5, CSS, MySQL
+                </p>
+                <p class="lead fw-bold">Key Responsibilities:</p>
+                <ul class="list-group list-group-flush pb-3">
+                  <li class="list-group-item lead">Customer meetings for feature definition.</li>
+                  <li class="list-group-item lead">
+                    Development of new functionalities and maintenance of existing PHP
+                    code.
+                  </li>
+                  <li class="list-group-item lead">
+                    PHP code integration (Restful/SOAP) with SugarCRM and PentahoBI.
+                  </li>
+                </ul>                
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                <strong>Internship @ Federal University of Alfenas</strong>
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p class="lead">
+                  Open source consultancy working on different projects and clients
+                  using different technologies and frameworks.
+                </p>
+                <p class="lead">(March 2014 - April 2015)</p>
+                <p class="lead">
+                  <b>Technologies:</b> PHP, Wordpress, SugarCRM, PentahoBI, GIT, AWS,
+                  Bootstrap, JQuery, HTML5, CSS, MySQL
+                </p>
+                <p class="lead"><b>Key Responsibilities:</b></p>
+                <ul class="list-group list-group-flush pb-3">
+                  <li class="list-group-item lead">Customer meetings for feature definition.</li>
+                  <li class="list-group-item lead">
+                    Development of new functionalities and maintenance of existing PHP
+                    code.
+                  </li>
+                  <li class="list-group-item lead">
+                    PHP code integration (Restful/SOAP) with SugarCRM and PentahoBI.
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+      
     <hr />
-    <h2>Languages</h2>
-    <ul>
-        <li>English (Professional Working)</li>
-        <li>Portuguese (Native or Bilingual)</li>
-        <li>Spanish (Full Professional)</li>
-    </ul>
+    <!--Skills/Languages-->
+    <section id="skills-languages">
+      <div class="container">
+        <div class="row align-items-md-stretch text-center">
+          <div class="col-md">
+            <div class="h-100 p-5 rounded-3 background">
+              <h2 class="pb-2 text-center">Skills</h2>
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="50" height="50" src="./assets/icons/code-solid.svg" alt="code image">
+        <h2 class="fw-light">Software Development</h2>
+       <p>⭐️⭐️⭐️⭐️</p>
+        
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="50" height="50" src="./assets/icons/comment-dots-regular.svg" alt="communication image">
+        <h2 class="fw-light">Communication</h2>
+        <p>⭐️⭐️⭐️⭐️</p>
+       
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 mb-5">
+        <img class="bd-placeholder-img rounded-circle" width="50" height="50" src="./assets/icons/agile.png" alt="agile image">
+        <h2 class="fw-light">Agile Methodologies</h2>
+        <p>⭐️⭐️⭐️⭐️</p>        
+      </div><!-- /.col-lg-4 -->
+      <hr />
+      <h2 class="pb-2 text-center">Languages</h2>      
+              <div class="row">
+                <div class="col-lg-4">
+                  <h2 class="fw-light">English</h2>
+                  <p class="lead">Professional Working</p>          
+                  
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <h2 class="fw-light">Portuguese</h2>
+                  <p class="lead">Native or Bilingual</p>
+                  
+                 
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <h2 class="fw-light">Spanish</h2>
+                  <p class="lead">Full Professional</p>
+                        
+                </div><!-- /.col-lg-4 -->
+              </div>         
+            </div>
+        </div>      
+             
+            </div>
+          </div>
+        </div>
+      </div>      
+      
+    
+    </section>
+    
     <hr />
-    <h2>Other</h2>
-    <p><a href="./public/contact.html">Contact Me</a></p>
-    <hr />
-    <footer>
-        <p>© Karine Porto. All rights reserved.</p>
-    </footer>
+    <!--Contact me-->
+    <section id="contact-me">
+      <div class="pb-5 text-center">
+        <img class="d-block mx-auto mb-3" src="./assets/icons/envelope-regular.svg" alt="envelope icon" width="72" height="57">
+        <h2 class="text-body-emphasis">Get in Touch</h2>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">I'm always open to discuss about projects, 
+            learning about best practices or help
+            with your challenges.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a type="button" href="mailto::karine.porto@gmail.com" class="btn btn-light btn-lg px-4 gap-3 background">Contact me</a>            
+          </div>
+        </div>
+      </div>
+    </section>   
+   
+    <!-- Footer-->
+    <section id="footer" class="background">
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Karine Porto</span>
+          </div>    
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/karine-porto" target="_blank">Linkedin</a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://github.com/kaporto" target="_blank">GitHub</a></li>      
+          </ul>
+        </footer>
+      </div>
+    </section>  
+  
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
 </html>
